@@ -122,6 +122,7 @@ header {
                 text-decoration: none;
                 display: block;
 
+
                 &>span {
                     font-family: 'Josefin Sans', sans-serif;
                     font-weight: 400;
@@ -148,6 +149,10 @@ header {
 .navigation {
     height: 84px;
     background: #5373FD;
+
+    @media screen and (max-width:431px) {
+        display: none;
+    }
 
     @media screen and (max-width:965px) {
         height: 136px;

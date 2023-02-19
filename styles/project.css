@@ -150,6 +150,13 @@ q:after {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 431px) {
+  .container {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 header .header {
   background: url(../images/desktop-hero-section.jpg);
@@ -277,6 +284,11 @@ header .header-scroll-navigation > svg {
 .navigation {
   height: 84px;
   background: #5373FD;
+}
+@media screen and (max-width: 431px) {
+  .navigation {
+    display: none;
+  }
 }
 @media screen and (max-width: 965px) {
   .navigation {
