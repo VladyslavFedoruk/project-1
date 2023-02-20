@@ -280,140 +280,10 @@ header .header-scroll-navigation > svg {
   display: block;
   margin: 0 auto;
 }
-header .header .header__menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 48px;
-  height: 48px;
-  padding: 10px;
-}
-header .header .header__menu > span {
-  display: block;
-  height: 2px;
-  border-radius: 2px;
-  background: #000;
-  width: 100%;
-}
-header .header .header__nav {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: -100vh;
-  left: 0;
-  width: 100%;
-  background: rgb(34, 37, 35);
-  padding: 75px 15px 50px;
-  height: 100vh;
-  transition: 0.5s all;
-  visibility: hidden;
-  z-index: 0;
-}
-header .header .header__nav-list-item {
-  text-align: center;
-}
-header .header .header__nav-list-item-link {
-  display: block;
-  font-family: "Lato400", sans-serif;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 44px;
-  line-height: 37px;
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
-  margin-top: 55px;
-  position: relative;
-}
-header .header .header input {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  opacity: 0;
-}
-header .header .header input:checked {
-  z-index: 3;
-}
-header .header .header input:checked ~ .header__menu {
-  z-index: 2;
-}
-header .header .header input:checked ~ .header__nav {
-  top: 0;
-  visibility: visible;
-  z-index: 1;
-}
-header .header .header-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-  gap: 20px;
-}
-@media screen and (max-width: 542px) {
-  header .header {
-    gap: 20px;
-  }
-}
-header .header .header input,
-header .header .header__menu {
-  display: none;
-}
-header .header .header__nav {
-  flex-direction: row;
-  align-items: center;
-  position: static;
-  visibility: visible;
-  height: auto;
-  background: none;
-  padding: 0;
-  margin: 0;
-  justify-content: end;
-  transition: initial;
-}
-header .header .header__nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 42px;
-}
-header .header .header__nav-list-item-link {
-  font-family: "Lato400", sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-}
-header .header .header__nav-list-item-link:hover {
-  color: rgb(50, 131, 78);
-}
-header .header .header__nav-list-item-link:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: -5px;
-  width: 0;
-  height: 1px;
-  background-color: rgb(50, 131, 78);
-  transition: 0.5s all cubic-bezier(0.17, 0.67, 0.83, 0.67);
-}
-header .header .header__nav-list-item-link:hover:before {
-  width: 80%;
-  background-color: rgb(50, 131, 78);
-}
 
 .navigation {
   height: 84px;
   background: #5373FD;
-}
-@media screen and (max-width: 431px) {
-  .navigation {
-    display: none;
-  }
 }
 @media screen and (max-width: 965px) {
   .navigation {
@@ -487,7 +357,7 @@ header .header .header__nav-list-item-link:hover:before {
     height: 24px;
     text-align: center;
     right: 20px;
-    bottom: -19px;
+    bottom: 15%;
   }
   .navigation-map_category .nav {
     display: none;
@@ -497,6 +367,13 @@ header .header .header__nav-list-item-link:hover:before {
     position: relative;
     width: 432px;
   }
+}
+@media screen and (max-width: 542px) and (max-width: 433px) {
+  .navigation-map_category #burger:checked + label + .nav {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 542px) {
   .navigation-map_category .nav > .header__nav-list {
     display: flex;
     flex-direction: column;
@@ -673,12 +550,17 @@ header .header .header__nav-list-item-link:hover:before {
   }
 }
 .search-places-items > ul {
+  background: url(/images/line.png);
+  background-repeat: no-repeat;
+  background-position: right 52% bottom 85%;
+  background-size: 70%;
   padding-top: 122px;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 965px) {
   .search-places-items > ul {
+    background-image: none;
     padding-top: 60px;
     display: flex;
     flex-direction: column;
