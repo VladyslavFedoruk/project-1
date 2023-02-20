@@ -552,11 +552,24 @@ header .header-scroll-navigation > svg {
 .search-places-items > ul {
   background: url(/images/line.png);
   background-repeat: no-repeat;
-  background-position: right 52% bottom 85%;
-  background-size: 70%;
+  background-position: right 52% bottom 91%;
+  background-size: 78%;
   padding-top: 122px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1429px) {
+  .search-places-items > ul {
+    background-position: right 52% bottom 81%;
+    background-size: 74%;
+  }
+}
+@media screen and (max-width: 724px) {
+  .search-places-items > ul {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 965px) {
   .search-places-items > ul {
@@ -570,7 +583,7 @@ header .header-scroll-navigation > svg {
 .search-places-items_item > svg {
   display: block;
   margin: 0 auto;
-  margin-bottom: 4px;
+  margin-bottom: 20px;
 }
 .search-places-items_item > span {
   font-family: "Aleo", serif;
