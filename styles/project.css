@@ -285,6 +285,11 @@ header .header-scroll-navigation > svg {
   height: 84px;
   background: #5373FD;
 }
+@media screen and (max-width: 431px) {
+  .navigation {
+    display: none;
+  }
+}
 @media screen and (max-width: 965px) {
   .navigation {
     height: 136px;
@@ -357,25 +362,11 @@ header .header-scroll-navigation > svg {
     height: 24px;
     text-align: center;
     right: 20px;
-    bottom: -44.4%;
+    bottom: 15%;
   }
-}
-@media screen and (max-width: 542px) and (max-width: 433px) {
-  .navigation-map_category [for=burger] {
-    bottom: -26.7%;
-  }
-}
-@media screen and (max-width: 542px) and (max-width: 414px) {
-  .navigation-map_category [for=burger] {
-    bottom: -33.7%;
-  }
-}
-@media screen and (max-width: 542px) {
   .navigation-map_category .nav {
     display: none;
   }
-}
-@media screen and (max-width: 542px) {
   .navigation-map_category #burger:checked + label + .nav {
     display: block;
     position: relative;
