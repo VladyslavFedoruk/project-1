@@ -226,10 +226,10 @@ header {
 
             @media screen and (max-width:542px) {
                 [for=burger] {
-                    //second variant
-                    // position: fixed;
-                    // top: 420px;
-                    ///
+
+                    position: fixed;
+                    top: 420px;
+
                     display: block;
                     position: absolute;
                     width: 40px;
@@ -237,7 +237,7 @@ header {
                     text-align: center;
                     right: 20px;
                     //first variant
-                    top: 83.2%;
+                    // top: 83.2%;
 
                     //third variant
                     // bottom: -250px;
@@ -444,7 +444,7 @@ header {
     &-items {
 
         >ul {
-            background: url(/images/line.png);
+            background: url(../images/line.png);
             background-repeat: no-repeat;
             background-position: right 52% bottom 91%;
             background-size: 78%;
