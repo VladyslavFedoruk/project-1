@@ -359,9 +359,18 @@ header .header-scroll-navigation > svg {
     right: 20px;
     bottom: -44.4%;
   }
+}
+@media screen and (max-width: 542px) and (max-width: 433px) {
+  .navigation-map_category [for=burger] {
+    bottom: -34.4%;
+  }
+}
+@media screen and (max-width: 542px) {
   .navigation-map_category .nav {
     display: none;
   }
+}
+@media screen and (max-width: 542px) {
   .navigation-map_category #burger:checked + label + .nav {
     display: block;
     position: relative;

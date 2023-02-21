@@ -234,6 +234,10 @@ header {
                     text-align: center;
                     right: 20px;
                     bottom: -44.4%;
+
+                    @media screen and (max-width:433px) {
+                        bottom: -34.4%;
+                    }
                 }
 
                 .nav {
