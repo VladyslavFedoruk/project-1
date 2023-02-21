@@ -160,7 +160,7 @@ header {
         height: 136px;
     }
 
-    @media screen and (max-width:542px) {
+    @media screen and (max-width:443px) {
         height: 84px;
     }
 
@@ -224,7 +224,7 @@ header {
             }
 
 
-            @media screen and (max-width:542px) {
+            @media screen and (max-width:443px) {
                 [for=burger] {
 
                     display: block;
@@ -233,7 +233,7 @@ header {
                     height: 24px;
                     text-align: center;
                     right: 20px;
-                    bottom: 15.0%;
+                    bottom: 0;
 
                     // @media screen and (max-width:433px) {
                     //     bottom: -26.7%;
