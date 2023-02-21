@@ -285,11 +285,6 @@ header .header-scroll-navigation > svg {
   height: 84px;
   background: #5373FD;
 }
-@media screen and (max-width: 431px) {
-  .navigation {
-    display: none;
-  }
-}
 @media screen and (max-width: 965px) {
   .navigation {
     height: 136px;
