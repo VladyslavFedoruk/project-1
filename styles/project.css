@@ -290,7 +290,7 @@ header .header-scroll-navigation > svg {
     height: 136px;
   }
 }
-@media screen and (max-width: 443px) {
+@media screen and (max-width: 542px) {
   .navigation {
     height: 84px;
   }
@@ -349,7 +349,7 @@ header .header-scroll-navigation > svg {
 .navigation-map_category [for=burger] {
   display: none;
 }
-@media screen and (max-width: 443px) {
+@media screen and (max-width: 542px) {
   .navigation-map_category [for=burger] {
     display: block;
     position: absolute;
@@ -357,7 +357,7 @@ header .header-scroll-navigation > svg {
     height: 24px;
     text-align: center;
     right: 20px;
-    bottom: 0;
+    bottom: -29.2%;
   }
   .navigation-map_category .nav {
     display: none;
@@ -368,12 +368,12 @@ header .header-scroll-navigation > svg {
     width: 432px;
   }
 }
-@media screen and (max-width: 443px) and (max-width: 433px) {
+@media screen and (max-width: 542px) and (max-width: 542px) {
   .navigation-map_category #burger:checked + label + .nav {
     width: 350px;
   }
 }
-@media screen and (max-width: 443px) {
+@media screen and (max-width: 542px) {
   .navigation-map_category .nav > .header__nav-list {
     display: flex;
     flex-direction: column;
