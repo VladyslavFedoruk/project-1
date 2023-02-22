@@ -152,10 +152,6 @@ header {
     height: 84px;
     background: #5373FD;
 
-    // @media screen and (max-width:431px) {
-    //     display: none;
-    // }
-
     @media screen and (max-width:965px) {
         height: 136px;
     }
@@ -163,6 +159,10 @@ header {
     @media screen and (max-width:542px) {
         height: 84px;
     }
+
+    // @media screen and (max-width:443px) {
+    //     display: none;
+    // }
 
     &-map {
         display: flex;
@@ -233,15 +233,7 @@ header {
                     height: 24px;
                     text-align: center;
                     right: 20px;
-                    bottom: -29.2%;
-
-                    // @media screen and (max-width:433px) {
-                    //     bottom: -26.7%;
-                    // }
-
-                    // @media screen and (max-width:400px) {
-                    //     bottom: -33.7%;
-                    // }
+                    bottom: -64px;
                 }
 
                 .nav {
@@ -267,6 +259,18 @@ header {
                         padding: 30px 0;
                         gap: 32px;
                     }
+                }
+            }
+
+            @media screen and (max-width:443px) {
+                [for=burger] {
+                    display: block;
+                    position: absolute;
+                    width: 40px;
+                    height: 24px;
+                    text-align: center;
+                    right: 20px;
+                    bottom: -64px;
                 }
             }
         }
